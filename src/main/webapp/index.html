@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sign-up</title>
+<link href="style.css" rel="stylesheet">
+<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="outer-box">
+	
+        <div class="inner-box">
+            <header class="signup-header">
+                <h1>Sign Up</h1>
+                <p>It just takes few seconds</p>
+            </header>
+            <main class="signup-body">
+                <form action="SignupServlet" method="post" onsubmit ="return validatePassword()">
+                    <p>
+                        <label for="username">Full Name</label>
+                        <input type="text" name="username" id="username" placeholder="John Philip Doe" required>
+                    </p>
+                    <p>
+                        <label for="email">Your Email</label>
+                        <input type="text" name="email" id="email" placeholder="johndoe@gmail.com" required>
+                    </p>
+                    <p>
+                        <label for="password">Enter Your New Password</label>
+                        <input type="password" name="password" id="password" placeholder="at least 8 characters"  required>
+                    </p>
+                    <p>
+                        <label for="confirm-password">Confirm Your Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" placeholder="enter password again" required>
+                    </p>
+                    <p>
+                        <input type="submit" id="submit" value="Create Account">
+                    </p>
+                    
+                    <p id="error" style="color:red;"></p>
+                    
+                </form>
+            </main>
+            <footer class="signup-footer">
+                <p>Already have an account? <a href="signin.html">Sign in</a></p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>

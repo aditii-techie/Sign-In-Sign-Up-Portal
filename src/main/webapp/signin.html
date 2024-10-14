@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sign-in</title>
+<link rel="stylesheet" href="signin.css">
+</head>
+<body>
+<div class="outer-box">
+        <div class="inner-box">
+            <header class="signin-header">
+                <h1>Sign In</h1>
+                <br>
+            </header>
+         	<main class="signin-body">
+         		<form action="SigninServlet" method="post">
+         	<p>
+         		<label for="username">Username</label>
+         		<input type="text" placeholder="Enter Username" id="username" name="username" required>
+         	</p>
+         	<p>
+         		<label for="password">Password</label>
+         		<input type="password" placeholder="Enter Password" id="password" name="password" required>
+         	</p>
+         	<p><a href="forgot.html">Forgot Password?</a></p>
+         	<p>
+         		<input type="submit" id="submit" value="Sign in">
+         	</p>
+         		</form>
+         	</main>
+         	<footer class="signin-footer">
+         	<p>Don't you have an account?<a href="index.html"> Sign up</a></p>
+         	</footer>
+        </div>
+</div>
+                
+</body>
+</html>
